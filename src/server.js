@@ -31,7 +31,7 @@ const onRequest = (request, response) => {
   if (urlStruct[pathname]) {
     urlStruct[pathname](request, response, params);
   } else {
-    // urlStruct.notFound(request, response, params);
+    urlStruct.notFound(request, response, params);
   }
 
   /* Dated Method */
